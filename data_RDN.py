@@ -24,7 +24,6 @@ def collect_market_data():
         button = driver.find_element(
             By.XPATH, '//div[contains(text(), "Погодинні результати на РДН")]'
         )
-        print(button)
         button.click()
 
         time.sleep(3)
