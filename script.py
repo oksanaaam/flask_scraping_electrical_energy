@@ -7,7 +7,7 @@ def run_collect_market_data():
     collect_market_data()
 
 
-schedule.every().day.at("18:49").do(run_collect_market_data)
+schedule.every().day.at("12:30").do(run_collect_market_data)
 
 
 if __name__ == "__main__":
