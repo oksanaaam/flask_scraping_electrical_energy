@@ -69,7 +69,7 @@ It can be on http://127.0.0.1:5000/market_data?date=2023-06-13
 The API will respond with a JSON object containing the market data for the specified date.
 
 If we haven't entry in db for some day, we'll receive empty list
-![img.png](img_3.png)
+![img.png](img for README/img_3.png)
 
 Please note that you may need to update the time in the schedule.every().day.at("18:30").do(run_collect_market_data) line of the models.py script to match the desired time for data collection.
 
