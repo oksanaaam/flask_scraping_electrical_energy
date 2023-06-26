@@ -5,7 +5,7 @@ from models import MarketData
 
 
 @app.route("/market_data", methods=["GET"])
-def get_market_data():
+def get_market_data() -> tuple:
     date_str = request.args.get("date")
     if not date_str:
         return jsonify({"error": "Date parameter is missing"}), 400

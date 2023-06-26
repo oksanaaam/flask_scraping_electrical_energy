@@ -3,7 +3,7 @@ import schedule
 import time
 
 
-def run_collect_market_data():
+def run_collect_market_data() -> None:
     collect_market_data()
 
 
