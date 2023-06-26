@@ -37,7 +37,7 @@ Run the following command:
 
 The script will open a headless Chrome browser, scrape the data, and store it in a SQLite database (`market_data.db`).
 
-![img.png](img for README/img.png)
+![img.png](img%20for%20README%2Fimg.png)
 
 The script will run daily at a specified time (e.g., 12:30 PM) to collect the data for the next day.
 
@@ -56,7 +56,7 @@ To run the API, follow these steps:
 
 3. The API will be available at `http://localhost:5000/market_data`.
 
-![img.png](img for README/img_1.png)
+![img_1.png](img%20for%20README%2Fimg_1.png)
 
 ## Using the API
 
@@ -67,13 +67,13 @@ GET /market_data?date=2023-06-13
 
 It can be on http://127.0.0.1:5000/market_data?date=2023-06-13
 
-![img.png](img for README/img_2.png)
+![img_2.png](img%20for%20README%2Fimg_2.png)
 
 The API will respond with a JSON object containing the market data for the specified date.
 
 If we haven't entry in db for some day, we'll receive empty list
 
-![img.png](img for README/img_3.png)
+![img_3.png](img%20for%20README%2Fimg_3.png)
 
 Please note that you may need to update the time in the schedule.every().day.at("18:30").do(run_collect_market_data) line of the models.py script to match the desired time for data collection.
 
